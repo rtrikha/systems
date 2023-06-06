@@ -27,8 +27,9 @@ body {
 	}
 	.rhs {
 		label {
-			width: 38px;
-			height: 20px;
+			width: 54px;
+			height: 30px;
+			transform: translateY(-12px);
 			position: relative;
 			display: block;
 			background: #d0cfd3;
@@ -37,11 +38,11 @@ body {
 		}
 		label:after {
 			content: '';
-			width: 16px;
-			height: 16px;
+			width: 24px;
+			height: 24px;
 			position: absolute;
-			top: 2px;
-			left: 2px;
+			top: 3px;
+			left: 3px;
 			background-color: white;
 			border-radius: 180px;
 			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -52,7 +53,7 @@ body {
 			visibility: hidden;
 		}
 		input:checked + label:after {
-			left: 36px;
+			left: 51px;
 			transform: translateX(-100%);
 		}
 		label:after {
@@ -60,28 +61,19 @@ body {
 			transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 		}
 		label:active:after {
-			width: 18px;
+			width: 32px;
 		}
 		label img {
 			position: absolute;
 			z-index: 100;
-			top: 5px;
-			left: 5px;
+			top: 8px;
+			left: 8px;
 			display: flex;
 		}
 		label {
 			.dark {
 				img {
-					left: 23px;
-				}
-			}
-		}
-		label:active {
-			.light {
-				img {
-					z-index: 100 !important;
-					//transform: rotate(8deg);
-					//transform: translateX(2px);
+					left: 32px;
 				}
 			}
 		}
