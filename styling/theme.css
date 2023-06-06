@@ -1,0 +1,25 @@
+@font-face {
+  src: url(/resources/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
+  font-family: serif-pro;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(/resources/Source_Serif_Pro/SourceSerifPro-SemiBold.ttf);
+  font-family: serif-pro;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(/resources/Source_Serif_Pro/SourceSerifPro-SemiBoldItalic.ttf);
+  font-family: serif-pro;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  src: url(/resources/Inter/Inter-Regular.ttf);
+  font-family: inter;
+  font-weight: 400;
+}
+/*# sourceMappingURL=theme.css.map */
