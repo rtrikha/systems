@@ -39,5 +39,21 @@
 	</body>
 	<script src="js/script.js"></script>
 	<script src="js/theme.js"></script>
-
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+		const firebaseConfig = {
+		  apiKey: "AIzaSyCWhp-1pGmRV-c_pm-x4Zjdb-lYUm8XWOE",
+		  authDomain: "systems-f8edd.firebaseapp.com",
+		  projectId: "systems-f8edd",
+		  storageBucket: "systems-f8edd.appspot.com",
+		  messagingSenderId: "270477017764",
+		  appId: "1:270477017764:web:30dc53a3201f3e7195dc31",
+		  measurementId: "G-TBEPJ29FMJ"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
 </html>
