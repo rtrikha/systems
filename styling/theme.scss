@@ -1,35 +1,40 @@
+$a-b: var(--a-b);
+$f-h: var(--f-h);
+$f-m: var(--f-m);
+$f-l: var(--f-l);
+$b-h: var(--b-h);
+$t-b: var(--t-b);
+$t-f: var(--t-f);
+
 @mixin hero {
-	color: black;
+	color: $f-h;
 	font-family: serif-pro;
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: -1px;
 	line-height: 42px;
 }
-
 @mixin body-1 {
-	color: #312416;
-	font-size: 18px;
-	font-family: serif-pro;
-	font-weight: 400;
-	line-height: 24px;
-}
-
-@mixin body-2 {
-	color: black;
+	color: $f-m;
 	font-size: 14px;
 	font-family: inter;
 	font-weight: 400;
 	line-height: 22px;
 	letter-spacing: -0.3px;
 }
-
+@mixin body-2 {
+	color: $f-l;
+	font-size: 12px;
+	font-family: inter;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.3px;
+}
 @font-face {
 	src: url(/resources/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
 	font-family: serif-pro;
 	font-weight: 400;
 }
-
 @font-face {
 	src: url(/resources/Source_Serif_Pro/SourceSerifPro-SemiBold.ttf);
 	font-family: serif-pro;
@@ -41,9 +46,14 @@
 	font-weight: 600;
 	font-style: italic;
 }
-
 @font-face {
 	src: url(/resources/Inter/Inter-Regular.ttf);
 	font-family: inter;
 	font-weight: 400;
+}
+
+@font-face {
+	src: url(/resources/Inter/Inter-Medium.ttf);
+	font-family: inter;
+	font-weight: 600;
 }

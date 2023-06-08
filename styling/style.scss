@@ -1,22 +1,23 @@
 @import 'theme';
 
 body {
-	background-color: #e2e1e6;
+	background-color: $a-b;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	user-select: none;
-	margin-left: 16vw;
-	margin-right: 16vw;
+	margin-left: 28vw;
+	margin-right: 28vw;
 	margin-top: 2vh;
 }
 
 .heading-wrapper {
-	margin-top: 10vh;
+	margin-top: 6vh;
+	margin-bottom: 3vh;
 	display: flex;
 	justify-content: space-between;
 
 	.lhs {
-		width: 60%;
+		width: 72%;
 		.heading {
 			@include hero;
 		}
@@ -32,7 +33,7 @@ body {
 			transform: translateY(-12px);
 			position: relative;
 			display: block;
-			background: #d0cfd3;
+			background: $t-b;
 			border-radius: 20px;
 			cursor: pointer;
 		}
@@ -43,7 +44,7 @@ body {
 			position: absolute;
 			top: 3px;
 			left: 3px;
-			background-color: white;
+			background-color: $t-f;
 			border-radius: 180px;
 			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		}
@@ -81,13 +82,18 @@ body {
 }
 
 .main-wrapper {
-	margin-top: 4vh;
-	padding: 40px 20px;
-	border-radius: 20px;
-	color: #312416;
-	background-color: #ececef;
-	font-size: 18px;
-	font-family: inter;
-	font-weight: 400;
-	line-height: 24px;
+	margin-top: 3vh;
+	margin-bottom: 6vh;
+	.content {
+		@include body-1;
+		margin-bottom: 20px;
+	}
+}
+
+.divider {
+	width: auto;
+	height: 1px;
+	background: $t-b;
+	border-radius: 4px;
+	opacity: 0.4;
 }
