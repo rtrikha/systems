@@ -14,10 +14,18 @@ $t-f: var(--t-f);
 	letter-spacing: -1px;
 	line-height: 42px;
 }
+@mixin heading {
+	color: $f-m;
+	font-size: 16px;
+	font-family: Charter;
+	font-weight: 800;
+	line-height: 22px;
+	letter-spacing: -0.3px;
+}
 @mixin body-1 {
 	color: $f-m;
 	font-size: 14px;
-	font-family: inter;
+	font-family: Charter;
 	font-weight: 400;
 	line-height: 22px;
 	letter-spacing: -0.3px;
@@ -30,6 +38,7 @@ $t-f: var(--t-f);
 	line-height: 20px;
 	letter-spacing: -0.3px;
 }
+
 @font-face {
 	src: url(/resources/Source_Serif_Pro/SourceSerifPro-Regular.ttf);
 	font-family: serif-pro;
@@ -51,9 +60,23 @@ $t-f: var(--t-f);
 	font-family: inter;
 	font-weight: 400;
 }
-
 @font-face {
 	src: url(/resources/Inter/Inter-Medium.ttf);
 	font-family: inter;
 	font-weight: 600;
+}
+@font-face {
+	src: url(/resources/Inter/Inter-SemiBold.ttf);
+	font-family: inter;
+	font-weight: 800;
+}
+@font-face {
+	src: url(/resources/Charter/Charter_Regular.ttf);
+	font-family: Charter;
+	font-weight: 400;
+}
+@font-face {
+	src: url(/resources/Charter/Charter_Bold.ttf);
+	font-family: Charter;
+	font-weight: 800;
 }

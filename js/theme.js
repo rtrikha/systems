@@ -8,7 +8,7 @@ const Themes = {
 		backgroundMed: '#1D1D1F',
 		backgroundLow: ' #000000',
 		toneForeground: '#E9DACC',
-		toneBackground: '#00000026',
+		toneBackground: '#0000001a',
 	},
 	stockDark: {
 		appBackground: '#000010',

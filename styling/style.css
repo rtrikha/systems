@@ -24,6 +24,21 @@
   font-family: inter;
   font-weight: 600;
 }
+@font-face {
+  src: url(/resources/Inter/Inter-SemiBold.ttf);
+  font-family: inter;
+  font-weight: 800;
+}
+@font-face {
+  src: url(/resources/Charter/Charter_Regular.ttf);
+  font-family: Charter;
+  font-weight: 400;
+}
+@font-face {
+  src: url(/resources/Charter/Charter_Bold.ttf);
+  font-family: Charter;
+  font-weight: 800;
+}
 body {
   background-color: var(--a-b);
   -webkit-font-smoothing: antialiased;
@@ -110,18 +125,29 @@ body {
   left: 32px;
 }
 
-.main-wrapper {
+.content-wrapper {
   margin-top: 3vh;
   margin-bottom: 6vh;
 }
-.main-wrapper .content {
+.content-wrapper .content {
+  margin-bottom: 20px;
+}
+.content-wrapper .content .heading {
+  color: var(--f-m);
+  font-size: 16px;
+  font-family: Charter;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+.content-wrapper .content .body {
   color: var(--f-m);
   font-size: 14px;
-  font-family: inter;
+  font-family: Charter;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.3px;
-  margin-bottom: 20px;
 }
 
 .divider {
@@ -129,5 +155,5 @@ body {
   height: 1px;
   background: var(--t-b);
   border-radius: 4px;
-  opacity: 0.4;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

@@ -23,4 +23,19 @@
   src: url(/resources/Inter/Inter-Medium.ttf);
   font-family: inter;
   font-weight: 600;
+}
+@font-face {
+  src: url(/resources/Inter/Inter-SemiBold.ttf);
+  font-family: inter;
+  font-weight: 800;
+}
+@font-face {
+  src: url(/resources/Charter/Charter_Regular.ttf);
+  font-family: Charter;
+  font-weight: 400;
+}
+@font-face {
+  src: url(/resources/Charter/Charter_Bold.ttf);
+  font-family: Charter;
+  font-weight: 800;
 }/*# sourceMappingURL=theme.css.map */

@@ -81,12 +81,18 @@ body {
 	}
 }
 
-.main-wrapper {
+.content-wrapper {
 	margin-top: 3vh;
 	margin-bottom: 6vh;
 	.content {
-		@include body-1;
 		margin-bottom: 20px;
+		.heading {
+			@include heading;
+			margin-bottom: 4px;
+		}
+		.body {
+			@include body-1;
+		}
 	}
 }
 
@@ -95,5 +101,5 @@ body {
 	height: 1px;
 	background: $t-b;
 	border-radius: 4px;
-	opacity: 0.4;
+	opacity: 0.5;
 }
