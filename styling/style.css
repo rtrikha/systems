@@ -112,6 +112,7 @@ body ::selection {
 @media screen and (max-width: 480px) {
   .heading-wrapper .lhs {
     width: 100%;
+    margin-top: 16px;
   }
 }
 .heading-wrapper .rhs label {
