@@ -59,12 +59,35 @@ body ::-moz-selection {
 body ::selection {
   background: var(--t-b);
 }
+@media screen and (max-width: 1000px) {
+  body {
+    margin-left: 22vw;
+    margin-right: 22vw;
+  }
+}
+@media screen and (max-width: 620px) {
+  body {
+    margin-left: 18vw;
+    margin-right: 18vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+}
 
 .heading-wrapper {
   margin-top: 6vh;
   margin-bottom: 4vh;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .heading-wrapper {
+    flex-direction: column-reverse;
+  }
 }
 .heading-wrapper .lhs {
   width: 72%;
@@ -85,6 +108,11 @@ body ::selection {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.3px;
+}
+@media screen and (max-width: 480px) {
+  .heading-wrapper .lhs {
+    width: 100%;
+  }
 }
 .heading-wrapper .rhs label {
   width: 54px;

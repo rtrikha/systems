@@ -12,6 +12,19 @@ body {
 	::selection {
 		background: $t-b;
 	}
+
+	@media screen and (max-width: 1000px) {
+		margin-left: 22vw;
+		margin-right: 22vw;
+	}
+	@media screen and (max-width: 620px) {
+		margin-left: 18vw;
+		margin-right: 18vw;
+	}
+	@media screen and (max-width: 480px) {
+		margin-left: 12vw;
+		margin-right: 12vw;
+	}
 }
 
 .heading-wrapper {
@@ -20,6 +33,9 @@ body {
 	display: flex;
 	justify-content: space-between;
 
+	@media screen and (max-width: 480px) {
+		flex-direction: column-reverse;
+	}
 	.lhs {
 		width: 72%;
 		.heading {
@@ -28,6 +44,9 @@ body {
 		.subheading {
 			margin-top: 8px;
 			@include body-2;
+		}
+		@media screen and (max-width: 480px) {
+			width: 100%;
 		}
 	}
 	.rhs {
