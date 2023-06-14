@@ -8,11 +8,15 @@ body {
 	margin-left: 28vw;
 	margin-right: 28vw;
 	margin-top: 2vh;
+	user-select: auto !important;
+	::selection {
+		background: $t-b;
+	}
 }
 
 .heading-wrapper {
 	margin-top: 6vh;
-	margin-bottom: 3vh;
+	margin-bottom: 4vh;
 	display: flex;
 	justify-content: space-between;
 
@@ -81,14 +85,22 @@ body {
 	}
 }
 
+.divider {
+	width: auto;
+	height: 1px;
+	background: $t-b;
+	border-radius: 4px;
+	opacity: 0.5;
+}
+
 .content-wrapper {
-	margin-top: 3vh;
-	margin-bottom: 6vh;
+	margin-top: 4vh;
+	margin-bottom: 8vh;
 	.content {
 		margin-bottom: 20px;
 		.heading {
 			@include heading;
-			margin-bottom: 4px;
+			margin-bottom: 2px;
 		}
 		.body {
 			@include body-1;
@@ -96,10 +108,15 @@ body {
 	}
 }
 
-.divider {
-	width: auto;
-	height: 1px;
-	background: $t-b;
-	border-radius: 4px;
+.footer {
+	display: flex;
+	justify-content: space-between;
+	@include body-2;
 	opacity: 0.5;
+	margin-bottom: 4vh;
+
+	a {
+		text-decoration: none;
+		@include body-2;
+	}
 }
