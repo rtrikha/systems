@@ -120,10 +120,19 @@ body {
 		margin-bottom: 20px;
 		.heading {
 			@include heading;
-			margin-bottom: 8px;
+			margin-bottom: 16px;
 		}
 		.body {
 			@include body-1;
+		}
+		.emlif {
+			@include body-1;
+			margin-top: 8px;
+			img {
+				display: none;
+				margin-top: 16px;
+				width: 60%;
+			}
 		}
 	}
 }

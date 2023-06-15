@@ -180,12 +180,12 @@ body ::selection {
 }
 .content-wrapper .content .heading {
   color: var(--f-m);
-  font-size: 16px;
+  font-size: 18px;
   font-family: Charter;
   font-weight: 800;
   line-height: 22px;
   letter-spacing: -0.3px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .content-wrapper .content .body {
   color: var(--f-m);
@@ -194,6 +194,20 @@ body ::selection {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.3px;
+}
+.content-wrapper .content .emlif {
+  color: var(--f-m);
+  font-size: 16px;
+  font-family: Charter;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  margin-top: 8px;
+}
+.content-wrapper .content .emlif img {
+  display: none;
+  margin-top: 16px;
+  width: 60%;
 }
 
 .footer {
