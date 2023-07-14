@@ -117,7 +117,7 @@ body {
 	margin-top: 4vh;
 	margin-bottom: 8vh;
 	.content {
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 
 		.heading {
 			@include heading;
@@ -133,7 +133,6 @@ body {
 		}
 
 		.sub-body {
-			margin-left: 28px;
 			.pointer {
 				margin-top: 16px;
 			}

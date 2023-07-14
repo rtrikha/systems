@@ -37,7 +37,10 @@
 			</div>
 			<div class="content">
 				<div class="heading">A little about scale and problem at hand</div>
-				<div class="body">Swiggy is an organisation which is known for running bold experiments and experimental UIs. However, at its heart, Swiggy remains committed to deliver convenience. In addition to our widely recognised products, such as Food and Instamart, Swiggy is spread across in 9 different verticals. These range from customer-facing applications to dashboards designed for our supply partners. We needed a robust all-weather framework which helps our teams to ship faster, fail faster and iterate faster.</div>
+				<div class="body">
+					Swiggy is an organization known for running bold experiments and implementing experimental UIs. Over the past few months, we have shipped new features faster and with greater consistency than ever before. In order to keep up with the pace of business and expansion, we required a less-design, less-code framework that enables teams to bootstrap solutions more quickly.
+					<br>
+					In addition to our widely recognized products, such as Food and Instamart, Swiggy operates in many different verticals. These verticals encompass a range of applications, from customer-facing interfaces to dashboards designed for our supply partners. We needed a robust, all-weather framework that allows our teams to <b>ship faster, fail faster, and iterate faster.</b></div>
 			</div>
 			<div class="content">
 				<div class="heading">Where does Design System sit in the grand scheme?</div>
@@ -64,7 +67,9 @@
 					   <div class="subheading">2. Theme support for Multiple Verticals</div>
 					   <div class="body">The foundation of our system revolves around the concept of aliases, which allows us to infuse a unique personality into the entire Swiggy fleet when integrated into different verticals. At the core of this system are tokens like BG Primary, Button Primary, and Border Primary. However, the meaning and appearance of these tokens can vary based on the specific vertical they are applied to.
 						<br>To make it even flexible, our system includes support for vertical-dependent tokens within the pattern library. While this feature has some limitations, the need to create specific tokens arises infrequently. Nonetheless, we have provisions in place to address such requirements when they do arise.
-						</div>
+						<img src="./resources/content_images/themeProvider-light.png" alt="" id="themeProvider">	
+
+					</div>
 			</div>
 			<div class="content">
 				<div class="heading">How are things delegated and who runs the show?</div>
@@ -79,8 +84,17 @@
 					If the champion determines that the pattern needs to be built from scratch, they collaborate with the design and engineering teams to develop a new pattern tailored to the specific requirements. This involves designing the visual elements and defining the functional aspects of it.
 					<br><br>
 					In addition to the champions, we have a dedicated core team consisting of designers and engineers who play a crucial role in optimising the system. This core team focuses on making architectural and holistic decisions to enhance the design system's overall performance and functionality.
+				</div>
+			</div>	
+			<div class="content">
+				<div class="heading">How do we make sure quality and Swiggy DNA is intact always?</div>
+				<div class="body">To create a streamlined system while minimizing manual efforts, it is crucial for the solution to be self-governing and incorporate relevant gatekeeping mechanisms when necessary. At Swiggy, we follow a process called PP (Pixel-Perfection) signoff, which means that any feature ready for production must be approved by the designer to ensure it meets the expected standards (yes, design is sacrosanct to us).
+					<br><br>
+					In a similar vein, we have implemented a process called <b>DLS Audit signoff</b>, which takes place before the designs are shared with engineers or presented in a dev-walkthrough. This process requires the feature designer to have a mandatory audit session with the design champion of their respective vertical. While this may seem like an additional step, we have developed several plugins to expedite this process.
+					<br>
+					This signoff procedure ensures that designs comply with our standards and acts as an initial gatekeeping layer. Additionally, the process ensures that any new patterns or components required for a feature are either already built or are assigned to the relevant team for development. This reduces the likelihood of bottlenecks in the later stages of the release cycle.
 					</div>
-			</div>			
+			</div>		
 		</div>
 		</div>
 		<div class="footer">

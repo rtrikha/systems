@@ -40,12 +40,14 @@ function toggleValue() {
 			document.getElementById('light-mode-svg').style.filter = 'invert(1)';
 			document.getElementById('light-mode-svg').style.opacity = '0.6';
 			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Dark.png';
+			document.getElementById('themeProvider').src = './resources/content_images/themeProvider-Dark.png';
 		} else {
 			animateInDark(animateOutDark);
 			applyColourTheme('stockLight');
 			document.getElementById('light-mode-svg').style.filter = 'invert(0)';
 			document.getElementById('light-mode-svg').style.opacity = '1';
 			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Light.png';
+			document.getElementById('themeProvider').src = './resources/content_images/themeProvider-Light.png';
 		}
 	}
 
