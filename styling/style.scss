@@ -117,22 +117,30 @@ body {
 	margin-top: 4vh;
 	margin-bottom: 8vh;
 	.content {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+
 		.heading {
 			@include heading;
-			margin-bottom: 16px;
+			margin-bottom: 8px;
+		}
+		.subheading {
+			@include subheading;
+			margin-top: 32px;
+			margin-bottom: 8px;
 		}
 		.body {
 			@include body-1;
 		}
-		.emlif {
-			@include body-1;
-			margin-top: 8px;
-			img {
-				display: none;
+
+		.sub-body {
+			margin-left: 28px;
+			.pointer {
 				margin-top: 16px;
-				width: 60%;
 			}
+		}
+		img {
+			margin-top: 20px;
+			width: 100%;
 		}
 	}
 }

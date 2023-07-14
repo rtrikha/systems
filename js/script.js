@@ -39,11 +39,13 @@ function toggleValue() {
 			applyColourTheme('stockDark');
 			document.getElementById('light-mode-svg').style.filter = 'invert(1)';
 			document.getElementById('light-mode-svg').style.opacity = '0.6';
+			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Dark.png';
 		} else {
 			animateInDark(animateOutDark);
 			applyColourTheme('stockLight');
 			document.getElementById('light-mode-svg').style.filter = 'invert(0)';
 			document.getElementById('light-mode-svg').style.opacity = '1';
+			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Light.png';
 		}
 	}
 

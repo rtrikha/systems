@@ -39,6 +39,11 @@
   font-family: Charter;
   font-weight: 800;
 }
+@font-face {
+  src: url(/systems/resources/wishshore.ttf);
+  font-family: Calendas;
+  font-weight: 600;
+}
 body {
   background-color: var(--a-b);
   -webkit-font-smoothing: antialiased;
@@ -95,7 +100,7 @@ body ::selection {
 .heading-wrapper .lhs .heading {
   color: var(--f-h);
   font-family: serif-pro;
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 42px;
@@ -176,16 +181,26 @@ body ::selection {
   margin-bottom: 8vh;
 }
 .content-wrapper .content {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .content-wrapper .content .heading {
   color: var(--f-m);
-  font-size: 18px;
+  font-size: 28px;
   font-family: Charter;
-  font-weight: 800;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+}
+.content-wrapper .content .subheading {
+  color: var(--f-m);
+  font-size: 20px;
+  font-family: Charter;
+  font-weight: 600;
   line-height: 22px;
   letter-spacing: -0.3px;
-  margin-bottom: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .content-wrapper .content .body {
   color: var(--f-m);
@@ -195,19 +210,15 @@ body ::selection {
   line-height: 24px;
   letter-spacing: -0.3px;
 }
-.content-wrapper .content .emlif {
-  color: var(--f-m);
-  font-size: 16px;
-  font-family: Charter;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.3px;
-  margin-top: 8px;
+.content-wrapper .content .sub-body {
+  margin-left: 28px;
 }
-.content-wrapper .content .emlif img {
-  display: none;
+.content-wrapper .content .sub-body .pointer {
   margin-top: 16px;
-  width: 60%;
+}
+.content-wrapper .content img {
+  margin-top: 20px;
+  width: 100%;
 }
 
 .footer {

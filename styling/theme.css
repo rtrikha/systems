@@ -38,4 +38,9 @@
   src: url(/resources/Charter/Charter_Bold.ttf);
   font-family: Charter;
   font-weight: 800;
+}
+@font-face {
+  src: url(/systems/resources/wishshore.ttf);
+  font-family: Calendas;
+  font-weight: 600;
 }/*# sourceMappingURL=theme.css.map */

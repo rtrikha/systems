@@ -14,7 +14,7 @@
 	<body>
 		<div class="heading-wrapper">
 			<div class="lhs">
-				<div class="heading">systems, everything I know and <span style="font-style: italic">you</span> would need to know</div>
+				<div class="heading">how we at Swiggy build products using<span style="font-style: italic"> our Design System</span></div>
 				<div class="subheading">
 					With a deep fascination for structured systems and the architecture of well-functioning things. In my writings, I will be sharing my experiences and the knowledge I have gained along the way, with the hope that it will ignite inspiration in your own pursuits</div>
 			</div>
@@ -22,10 +22,10 @@
                 <input type="checkbox" id="darkmode-toggle" name="togglevalue" onclick="toggleValue()" />
                 <label for="darkmode-toggle">
                     <div class="light">
-                        <img src="/resources/icons/light.svg" width="16px" height="16px" alt="" id="light-mode-svg">
+                        <img src="./resources/icons/light.svg" width="16px" height="16px" alt="" id="light-mode-svg">
                     </div>
                     <div class="dark">
-                        <img src="/resources/icons/dark.svg" width="16px" height="16px" alt="" id="dark-mode-svg">
+                        <img src="./resources/icons/dark.svg" width="16px" height="16px" alt="" id="dark-mode-svg">
                     </div>
             </div>
 		</div>
@@ -33,11 +33,54 @@
 		</div>
 		<div class="content-wrapper">
 			<div class="content">
-				<div class="heading">prioritise the primacy of frameworks over momentary solutions</div>
-				<div class="body">Building structure into your thoughts, rather than solely focusing on solving the current problem at hand, is always a practice that will lead you far. Scaling becomes much easier when you have a framework that supports your reasoning, enabling you to address not only present challenges but also future ones. It provides a roadmap that helps you identify patterns, identify underlying causes, and formulate long-term solutions. Systems are to meant to be applied to scale, be in the shoes of an architect and construct your foundation which is robust and scalable</div>
-				<div class="emlif"><span style="font-weight: 800">explain me like I'm five:</span> let's think about making an apple cinnamon pie on a calm and relaxing Sunday afternoon. You might think it's easier to just look up a recipe online to make the pie. But there's a better way! Instead, you can learn the basic techniques of baking and use that knowledge to make an amazing apple pie. This way, you'll understand how things work and can create something really special.
-				<br>But here's the exciting part: by learning these baking principles, you can also use them to make many other delicious dishes, not just desserts! For example, you can even try making garlic bread. It's all about understanding the important rules and techniques of baking, which will help you become a great cook. So why not give it a try and have fun exploring different recipes? <br><img src="./resources/content_images/baking.svg" alt="">
+				<div class="body">Its not a blog which talks about what a design system is and why it is important, there are better examples our there which can teach you the importance of a system. In this blog perhaps I'll be walking you through how we at Swiggy have and are building processes to bootstrap Design and Engineering. While the examples I talk about will revolve around addressing challenges specific to Swiggy, however the principles can be applied to organisations of any size or industry.</div>
 			</div>
+			<div class="content">
+				<div class="heading">A little about scale and problem at hand</div>
+				<div class="body">Swiggy is an organisation which is known for running bold experiments and experimental UIs. However, at its heart, Swiggy remains committed to deliver convenience. In addition to our widely recognised products, such as Food and Instamart, Swiggy is spread across in 9 different verticals. These range from customer-facing applications to dashboards designed for our supply partners. We needed a robust all-weather framework which helps our teams to ship faster, fail faster and iterate faster.</div>
+			</div>
+			<div class="content">
+				<div class="heading">Where does Design System sit in the grand scheme?</div>
+				<div class="body">Our goal was to develop a system that seamlessly integrates with existing business-as-usual processes while carving out its unique space without causing major disruptions. It was imperative for us to place the Design System globally which governs all the patterns which are spread across different verticals while still embodying the unmistakable Swiggy DNA throughout.</div>
+			</div>
+			<div class="content">
+				<div class="heading">Deconstructing our system</div>
+				<div class="body">Attempting to talk about the intricacies of our design system would be a complex task. However, I will focus on three fundamental aspects that provide insights into its functioning:
+				</div>
+						<div class="subheading">1. System Architecture</div>
+						<div class="body">The system is structured in a pretty conventional manner, divided into three distinct parts:</div>
+						<img src="./resources/content_images/systemArchitecture-Light.png" alt="" id="systemArchitecture">	
+						<div class="sub-body">
+							<div class="pointer">
+								<div class="body"><b>1.1 Core System</b> - This encompasses all the components and elements that are business agnostic. It is intentionally kept separate from any specific business influence. The core system houses foundational building blocks such as tokens, control elements, input fields, and other fundamental design elements.
+									<br><b>What it means for designers? </b>- This is a Figma file which acts as a library to be included in working files. This has all the basic components, text styles, colour tokens and similar elements. <br><b>What it means for engineers? </b>- This is a GitHub repo maintained separately for different technologies. This acts as a package which in included by all the projects which gives them boiler plate to start with
+								</div>
+							</div>
+							<div class="pointer">
+							<div class="body"><b>1.2 Pattern Library</b> - This section is dedicated to assembling complex and intricate components. The elements within the pattern library are purposefully designed with specific teams or multiple teams in mind, while considering very specific business use cases. These components are crafted to address the unique needs and requirements of various teams within the organisation.
+									<br><b>What it means for designers? </b>-This is a separate Figma file which is also included as a library in working files. This has elements like cards, special buttons etc. While designing, the designers use mixture of components coming from both Core System and Pattern Library.<br><b>What it means for engineers? </b>-This is also a GitHub repo which is included as a package in the working project.</div>
+							</div>
+					   </div>
+					   <div class="subheading">2. Theme support for Multiple Verticals</div>
+					   <div class="body">The foundation of our system revolves around the concept of aliases, which allows us to infuse a unique personality into the entire Swiggy fleet when integrated into different verticals. At the core of this system are tokens like BG Primary, Button Primary, and Border Primary. However, the meaning and appearance of these tokens can vary based on the specific vertical they are applied to.
+						<br>To make it even flexible, our system includes support for vertical-dependent tokens within the pattern library. While this feature has some limitations, the need to create specific tokens arises infrequently. Nonetheless, we have provisions in place to address such requirements when they do arise.
+						</div>
+			</div>
+			<div class="content">
+				<div class="heading">How are things delegated and who runs the show?</div>
+				<div class="body">Our Design System has evolved over time and now has reached a point where the entire thing works as a well oiled machine. Each gear in the process is placed meticulously and plays a vital role. To understand the delegation method, we'll need to understand the Champions Framework first.</div>
+				<div class="subheading">Champions Framework</div>
+				<div class="body">To gain a better understanding of this framework, it is essential to grasp its underlying architecture. The previously mentioned Core System and Pattern Library serve as the foundation for our Champions Framework, which is implemented both on the engineering and design fronts.
+					<br>
+					The framework operates on a straightforward principle: every vertical maintains its pattern library, and these UI patterns are collaboratively developed by champions from both the design and engineering domains. These champions act as gatekeepers and advocates for their respective charters.
+					<br><br>
+					When a specific UI pattern is requested or proposed, it is presented to the champion for evaluation. The champion assesses whether the pattern should be created from scratch or if a similar existing pattern can be modified to meet the requirement with minor adjustments. Once a decision is made, the champion takes on the responsibility of creating and documenting the chosen pattern from both the design and engineering perspectives.
+					<br>
+					If the champion determines that the pattern needs to be built from scratch, they collaborate with the design and engineering teams to develop a new pattern tailored to the specific requirements. This involves designing the visual elements and defining the functional aspects of it.
+					<br><br>
+					In addition to the champions, we have a dedicated core team consisting of designers and engineers who play a crucial role in optimising the system. This core team focuses on making architectural and holistic decisions to enhance the design system's overall performance and functionality.
+					</div>
+			</div>			
 		</div>
 		</div>
 		<div class="footer">

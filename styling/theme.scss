@@ -9,16 +9,24 @@ $t-f: var(--t-f);
 @mixin hero {
 	color: $f-h;
 	font-family: serif-pro;
-	font-size: 40px;
+	font-size: 44px;
 	font-weight: 600;
 	letter-spacing: -1px;
 	line-height: 42px;
 }
 @mixin heading {
 	color: $f-m;
-	font-size: 18px;
+	font-size: 28px;
 	font-family: Charter;
-	font-weight: 800;
+	font-weight: 600;
+	line-height: 34px;
+	letter-spacing: -0.8px;
+}
+@mixin subheading {
+	color: $f-m;
+	font-size: 20px;
+	font-family: Charter;
+	font-weight: 600;
 	line-height: 22px;
 	letter-spacing: -0.3px;
 }
@@ -79,4 +87,9 @@ $t-f: var(--t-f);
 	src: url(/resources/Charter/Charter_Bold.ttf);
 	font-family: Charter;
 	font-weight: 800;
+}
+@font-face {
+	src: url(/systems/resources/wishshore.ttf);
+	font-family: Calendas;
+	font-weight: 600;
 }
