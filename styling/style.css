@@ -213,7 +213,7 @@ body ::selection {
 .content-wrapper .content .sub-body .pointer {
   margin-top: 16px;
 }
-.content-wrapper .content img {
+.content-wrapper img {
   margin-top: 20px;
   width: 100%;
 }
