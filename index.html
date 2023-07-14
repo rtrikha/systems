@@ -63,6 +63,10 @@
 							<div class="body"><b>1.2 Pattern Library</b> - This section is dedicated to assembling complex and intricate components. The elements within the pattern library are purposefully designed with specific teams or multiple teams in mind, while considering very specific business use cases. These components are crafted to address the unique needs and requirements of various teams within the organisation.
 									<br><b>What it means for designers? </b>-This is a separate Figma file which is also included as a library in working files. This has elements like cards, special buttons etc. While designing, the designers use mixture of components coming from both Core System and Pattern Library.<br><b>What it means for engineers? </b>-This is also a GitHub repo which is included as a package in the working project.</div>
 							</div>
+							<div class="pointer">
+								<div class="body"><b>1.3 Common Pattern Library</b> - This section serves as a playground where multiple teams can explore and adapt existing patterns to meet their specific requirements. Our goal is to maximize the reuse of patterns whenever possible. However, we keep this space somewhat separate from the pattern library to ensure that contributors and consumers (designers and engineers) are fully aware when utilizing a shared asset.
+										<br><b>What it means for designers? </b>-This is a separate page in the same Pattern Library Figma file.<br><b>What it means for engineers? </b>-This is just a different folder inside the same Pattern Library GitHub repo.</div>
+								</div>
 					   </div>
 					   <div class="subheading">2. Theme support for Multiple Verticals</div>
 					   <div class="body">The foundation of our system revolves around the concept of aliases, which allows us to infuse a unique personality into the entire Swiggy fleet when integrated into different verticals. At the core of this system are tokens like BG Primary, Button Primary, and Border Primary. However, the meaning and appearance of these tokens can vary based on the specific vertical they are applied to.
@@ -88,13 +92,23 @@
 			</div>	
 			<div class="content">
 				<div class="heading">How do we make sure quality and Swiggy DNA is intact always?</div>
-				<div class="body">To create a streamlined system while minimizing manual efforts, it is crucial for the solution to be self-governing and incorporate relevant gatekeeping mechanisms when necessary. At Swiggy, we follow a process called PP (Pixel-Perfection) signoff, which means that any feature ready for production must be approved by the designer to ensure it meets the expected standards (yes, design is sacrosanct to us).
+				<div class="body">To create a streamlined system while minimizing manual efforts, it is crucial for the solution to be self-governing and incorporate relevant gatekeeping mechanisms when necessary. At Swiggy, we follow a process called PP (Pixel-Perfection) signoff, which means that any feature ready for production must be approved by the designer to ensure it meets the expected standards (yes, design is sacrosanct to us).</div>
+				<div class="subheading">DLS Audit Signoff</div>
+				<div class="body">
+					Similar to our PP Signoff, we have implemented this process which takes place before the designs are shared with engineers or presented in a dev-walkthrough. This process requires the feature designer to have a mandatory audit session with the design champion of their respective vertical. While this may seem like an additional step, we have developed several plugins to expedite this process.
 					<br><br>
-					In a similar vein, we have implemented a process called <b>DLS Audit signoff</b>, which takes place before the designs are shared with engineers or presented in a dev-walkthrough. This process requires the feature designer to have a mandatory audit session with the design champion of their respective vertical. While this may seem like an additional step, we have developed several plugins to expedite this process.
-					<br>
 					This signoff procedure ensures that designs comply with our standards and acts as an initial gatekeeping layer. Additionally, the process ensures that any new patterns or components required for a feature are either already built or are assigned to the relevant team for development. This reduces the likelihood of bottlenecks in the later stages of the release cycle.
+				</div>
+			</div>	
+			<div class="content">
+				<div class="heading">What problems are we facing as of now?</div>
+				<div class="body">Swiggy operates across multiple technology stacks, encompassing native technologies and web platforms. Currently, we are shipping various products using different stacks. However, this presents a challenge as we have to create entities separately for each technology. While we are gradually transitioning to more hybrid solutions, our legacy food delivery app still relies on native technologies.
+					<br><br>
+					The presence of diverse tech stacks poses an issue when it comes to creating the same component in different technologies, each with its own set of tradeoffs. We have adopted a strategy where we prioritize building components based on immediate needs, rather than developing all components for all technologies upfront.
+					<br>
+					Although we have achieved uniformity in terms of tokens across all platforms, the development of components follows an on-demand basis. This approach helps us allocate our resources more efficiently. However, it does occasionally result in situations where a particular tech stack lacks a necessary component or pattern for a specific feature.
 					</div>
-			</div>		
+			</div>
 		</div>
 		</div>
 		<div class="footer">
