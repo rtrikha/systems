@@ -41,6 +41,8 @@ function toggleValue() {
 			document.getElementById('light-mode-svg').style.opacity = '0.6';
 			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Dark.png';
 			document.getElementById('themeProvider').src = './resources/content_images/themeProvider-Dark.png';
+			document.getElementById('experimentation').src = './resources/content_images/experimentation-Dark.png';
+			document.getElementById('DLSAudit').src = './resources/content_images/DLSAudit-Dark.png';
 		} else {
 			animateInDark(animateOutDark);
 			applyColourTheme('stockLight');
@@ -48,6 +50,8 @@ function toggleValue() {
 			document.getElementById('light-mode-svg').style.opacity = '1';
 			document.getElementById('systemArchitecture').src = './resources/content_images/systemArchitecture-Light.png';
 			document.getElementById('themeProvider').src = './resources/content_images/themeProvider-Light.png';
+			document.getElementById('experimentation').src = './resources/content_images/experimentation-Light.png';
+			document.getElementById('DLSAudit').src = './resources/content_images/DLSAudit-Light.png';
 		}
 	}
 
